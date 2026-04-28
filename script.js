@@ -1,5 +1,5 @@
 const commonData = {
-  name: "Juan Pablo Monsalve",
+  name: "Juan Pablo Monsalve Rios",
   job2_date: "2021 - 2022",
   job3_date: "2020 - 2021",
 };
@@ -93,7 +93,7 @@ const toggleLanguage = () => {
 
 document.addEventListener('DOMContentLoaded', applyTranslations);
 
-const profilePhoto = document.querySelector('.profile');
+const profilePhoto = document.querySelector('.profile-card');
 if (profilePhoto) {
   profilePhoto.style.cursor = 'default';
   profilePhoto.addEventListener('dblclick', toggleLanguage);
