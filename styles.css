@@ -1,116 +1,166 @@
 body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #f4f6f8;
-  color: #1f2937;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6f8;
+    color: #1f2937;
 }
 
 .cv {
-  display: grid;
-  grid-template-columns: 280px 1fr;
-  max-width: 1000px;
-  margin: 40px auto;
-  background: white;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: stretch;
+    max-width: 1100px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    height: fit-content;
 }
 
 .sidebar {
-  background: #0a192f;
-  color: white;
-  padding: 30px 20px;
-  text-align: center;
+    background: #0a192f;
+    color: white;
+    width: 350px;
+    padding: 60px 30px;
+    flex-shrink: 0;
+    text-align: center;
 }
 
 .profile {
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #4ea8de;
-  display: block;
-  margin: 0 auto 15px auto;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #4ea8de;
+    margin-bottom: 20px;
 }
 
 .role {
-  color: #4ea8de;
-  font-size: 0.95em;
-  margin-bottom: 15px;
-}
-
-.lang-btn {
-  margin: 10px 0 20px 0;
-  padding: 6px 10px;
-  background: #4ea8de;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  color: #0a192f;
-  font-weight: bold;
+    color: white;
+    font-size: 0.95em;
+    margin-bottom: 30px;
+    font-weight: 500;
 }
 
 .section {
-  text-align: left;
-  margin-top: 20px;
+    text-align: left;
+    margin-bottom: 30px;
 }
 
 .section h3 {
-  font-size: 0.9em;
-  margin-bottom: 10px;
-  color: #4ea8de;
-  border-bottom: 1px solid rgba(255,255,255,0.2);
-  padding-bottom: 4px;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    color: #4ea8de;
+    border-bottom: 1px solid rgba(78, 168, 222, 0.2);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .section p {
-  font-size: 0.85em;
-  margin: 6px 0;
-  color: #d1d5db;
+    font-size: 0.88em;
+    margin: 10px 0;
+    color: #e2e8f0;
+}
+
+.tools-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.tools-list li {
+    font-size: 0.82em;
+    color: #cbd5e1;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.tools-list li::before {
+    content: "▹";
+    color: #4ea8de;
+    margin-right: 5px;
 }
 
 .content {
-  padding: 35px;
+    flex-grow: 1;
+    padding: 50px 60px 40px 60px;
+    background: white;
+    display: block;
 }
 
 .content h1 {
-  font-size: 1.2em;
-  margin-bottom: 10px;
-  border-bottom: 2px solid #e5e7eb;
-  padding-bottom: 5px;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    color: #0a192f;
+    border-bottom: 2px solid #4ea8de;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.content p {
+    line-height: 1.6;
+    color: #374151;
+    font-size: 1em;
+    margin-bottom: 20px;
 }
 
 .item {
-  margin-bottom: 20px;
+    margin-bottom: 35px;
 }
 
 .item h2 {
-  font-size: 1em;
-  margin: 0;
+    font-size: 1.15em;
+    margin: 0;
+    color: #0a192f;
 }
 
-.item span {
-  font-size: 0.8em;
-  color: #6b7280;
+.date {
+    display: block;
+    font-weight: bold;
+    color: #4ea8de;
+    font-size: 0.9em;
+    margin: 5px 0 10px 0;
 }
 
-ul {
-  margin-top: 8px;
-  padding-left: 18px;
+.edu-item {
+    margin-bottom: 20px;
+    padding-left: 15px;
+    border-left: 3px solid #f0f2f5;
 }
 
-li {
-  margin-bottom: 5px;
-  font-size: 0.9em;
+.edu-item h2 {
+    font-size: 1.05em;
+    margin-bottom: 2px;
+    color: #0a192f;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .cv {
-    grid-template-columns: 1fr;
-  }
+.edu-item p {
+    margin: 0;
+    font-size: 0.95em;
+    color: #4b5563;
+    line-height: 1.4;
+}
 
-  .sidebar {
-    text-align: center;
-  }
+.content section:last-child, 
+.content section:last-child .edu-item:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 850px) {
+    .cv {
+        flex-direction: column;
+        margin: 0;
+        border-radius: 0;
+    }
+    .sidebar {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .content {
+        padding: 30px;
+    }
 }

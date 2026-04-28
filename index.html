@@ -12,26 +12,37 @@
     <img src="assets/profile.jpeg" class="profile">
 
     <h2 data-i18n="name">Juan Pablo Monsalve</h2>
-    <p class="role">Automation Engineer</p>
-
-    <button class="lang-btn" onclick="toggleLanguage()">🌐 EN / ES</button>
-
+    <p class="role" data-i18n="role"></p>
+    
     <div class="section">
       <h3 data-i18n="contact">Contacto</h3>
-      <p data-i18n="location">Medellín, Colombia</p>
+      <p>📍 <span data-i18n="location">Medellín, Colombia</span></p>
       <p>📧 jpmonsalverios.12@gmail.com</p>
       <p>📱 3042142290</p>
     </div>
 
     <div class="section">
-      <h3 data-i18n="skills">Skills</h3>
-      <p>Selenium</p>
-      <p>Appium</p>
-      <p>Karate</p>
-      <p>Jenkins</p>
-      <p>GitLab CI</p>
-      <p>UiPath</p>
-      <p>AWS</p>
+      <h3 data-i18n="skills">Habilidades</h3>
+      <p><strong data-i18n="skill_automation">Automatización:</strong> Selenium, Karate, REST APIs</p>
+      <p><strong data-i18n="skill_rpa">RPA:</strong> UiPath</p>
+      <p><strong data-i18n="skill_cloud">Cloud/DevOps:</strong> AWS, GitLab CI/CD</p>
+      <p><strong data-i18n="skill_ai">IA:</strong> AI/ML API Integration (LLMs, OCR)</p>
+      <p><strong data-i18n="skill_languages">Lenguajes:</strong> Java, .NET, Python</p>
+      <p><strong data-i18n="skill_db">Bases de Datos:</strong> SQL Server, MySQL</p>
+    </div>
+
+    <div class="section">
+      <h3 data-i18n="tools_title">Herramientas</h3>
+      <ul class="tools-list">
+        <li>UiPath</li>
+        <li>AWS</li>
+        <li>Git</li>
+        <li>Postman</li>
+        <li>Jira</li>
+        <li>SAP GUI</li>
+        <li>Jenkins</li>
+        <li>Azure DevOps</li>
+      </ul>
     </div>
 
     <div class="section">
@@ -41,6 +52,7 @@
     </div>
 
   </aside>
+  
   <main class="content">
 
     <section>
@@ -52,8 +64,8 @@
       <h1 data-i18n="experience">Experiencia</h1>
 
       <div class="item">
-        <h2>Holcim Colombia</h2>
-        <span data-i18n="job1_date"></span>
+        <h2>Holcim Colombia S.A. - Colombia</h2>
+        <span class="date" data-i18n="job1_date"></span>
         <ul>
           <li data-i18n="job1_1"></li>
           <li data-i18n="job1_2"></li>
@@ -62,8 +74,8 @@
       </div>
 
       <div class="item">
-        <h2>Indra Sistemas</h2>
-        <span data-i18n="job2_date"></span>
+        <h2>Indra Colombia SAS - Colombia</h2>
+        <span class="date" data-i18n="job2_date"></span>
         <ul>
           <li data-i18n="job2_1"></li>
           <li data-i18n="job2_2"></li>
@@ -71,14 +83,36 @@
         </ul>
       </div>
 
+      <div class="item">
+        <h2>TATA Consultancy Services - Colombia</h2>
+        <span class="date" data-i18n="job3_date"></span>
+        <ul>
+          <li data-i18n="job3_1"></li>
+          <li data-i18n="job3_2"></li>
+          <li data-i18n="job3_3"></li>
+        </ul>
+      </div>
+
     </section>
 
-    <section>
+    <section class="education-section">
       <h1 data-i18n="education">Educación</h1>
-      <p data-i18n="edu1"></p>
-      <p data-i18n="edu2"></p>
-    </section>
+      
+      <div class="edu-item">
+        <h2 data-i18n="edu1_title">Ingeniería de Sistemas</h2>
+        <p>ITM — <span class="date-edu">2024</span></p>
+      </div>
 
+      <div class="edu-item">
+        <h2 data-i18n="edu2_title">Tecnólogo en Sistemas</h2>
+        <p>ITM — <span class="date-edu">2021</span></p>
+      </div>
+
+      <div class="edu-item">
+        <h2 data-i18n="edu3_title">Desarrollo de Apps Móviles</h2>
+        <p>U. Complutense de Madrid (Online) — <span class="date-edu">2020</span></p>
+      </div>
+    </section>
   </main>
 </div>
 <script src="script.js"></script>
