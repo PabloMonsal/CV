@@ -7,104 +7,80 @@
 </head>
 <body>
 
-<header class="header">
-  <div class="container header-content">
-    <img src="assets/profile.jpeg" class="profile-img" alt="profile">
+<div class="cv">
+  <aside class="sidebar">
+    <img src="assets/profile.jpeg" class="profile">
 
-    <div>
-      <h1 data-i18n="name">Juan Pablo Monsalve</h1>
-      <p class="role" data-i18n="role">QA Automation Engineer | RPA | CI/CD</p>
+    <h2 data-i18n="name">Juan Pablo Monsalve</h2>
+    <p class="role">Automation Engineer</p>
 
-      <div class="contact">
-        <span>📍 Medellín, Colombia</span>
-        <span>📧 jpmonsalverios.12@gmail.com</span>
+    <button class="lang-btn" onclick="toggleLanguage()">🌐 EN / ES</button>
+
+    <div class="section">
+      <h3 data-i18n="contact">Contacto</h3>
+      <p data-i18n="location">Medellín, Colombia</p>
+      <p>📧 jpmonsalverios.12@gmail.com</p>
+      <p>📱 3042142290</p>
+    </div>
+
+    <div class="section">
+      <h3 data-i18n="skills">Skills</h3>
+      <p>Selenium</p>
+      <p>Appium</p>
+      <p>Karate</p>
+      <p>Jenkins</p>
+      <p>GitLab CI</p>
+      <p>UiPath</p>
+      <p>AWS</p>
+    </div>
+
+    <div class="section">
+      <h3 data-i18n="languages">Idiomas</h3>
+      <p data-i18n="lang_es">Español - Nativo</p>
+      <p data-i18n="lang_en">Inglés - Intermedio</p>
+    </div>
+
+  </aside>
+  <main class="content">
+
+    <section>
+      <h1 data-i18n="profile_title">Perfil</h1>
+      <p data-i18n="profile_text"></p>
+    </section>
+
+    <section>
+      <h1 data-i18n="experience">Experiencia</h1>
+
+      <div class="item">
+        <h2>Holcim Colombia</h2>
+        <span data-i18n="job1_date"></span>
+        <ul>
+          <li data-i18n="job1_1"></li>
+          <li data-i18n="job1_2"></li>
+          <li data-i18n="job1_3"></li>
+        </ul>
       </div>
 
-      <button onclick="toggleLanguage()" class="lang-btn">🌐 EN / ES</button>
-    </div>
-  </div>
-</header>
+      <div class="item">
+        <h2>Indra Sistemas</h2>
+        <span data-i18n="job2_date"></span>
+        <ul>
+          <li data-i18n="job2_1"></li>
+          <li data-i18n="job2_2"></li>
+          <li data-i18n="job2_3"></li>
+        </ul>
+      </div>
 
-<main class="container">
+    </section>
 
-<section>
-  <h2 data-i18n="profile_title">Perfil</h2>
-  <p data-i18n="profile_text"></p>
-</section>
+    <section>
+      <h1 data-i18n="education">Educación</h1>
+      <p data-i18n="edu1"></p>
+      <p data-i18n="edu2"></p>
+    </section>
 
-<section>
-  <h2 data-i18n="skills_title">Stack Tecnológico</h2>
-  <div class="grid">
-
-    <div>
-      <h3>Automation</h3>
-      <p>Selenium, Serenity, Cucumber, Appium, Karate</p>
-    </div>
-
-    <div>
-      <h3>CI/CD</h3>
-      <p>Jenkins, GitLab CI</p>
-    </div>
-
-    <div>
-      <h3>Languages</h3>
-      <p>Java, .NET, SQL</p>
-    </div>
-
-    <div>
-      <h3>Tools</h3>
-      <p>Git, REST APIs, UiPath, AWS</p>
-    </div>
-
-  </div>
-</section>
-
-<section>
-  <h2 data-i18n="experience_title">Experiencia</h2>
-
-  <div class="job">
-    <h3>Holcim</h3>
-    <span data-i18n="job1_date"></span>
-    <ul>
-      <li data-i18n="job1_1"></li>
-      <li data-i18n="job1_2"></li>
-      <li data-i18n="job1_3"></li>
-    </ul>
-  </div>
-
-  <div class="job">
-    <h3>Indra</h3>
-    <span data-i18n="job2_date"></span>
-    <ul>
-      <li data-i18n="job2_1"></li>
-      <li data-i18n="job2_2"></li>
-      <li data-i18n="job2_3"></li>
-    </ul>
-  </div>
-
-</section>
-
-<section>
-  <h2 data-i18n="projects_title">Proyectos</h2>
-  <ul>
-    <li data-i18n="proj1"></li>
-    <li data-i18n="proj2"></li>
-    <li data-i18n="proj3"></li>
-  </ul>
-</section>
-
-<section>
-  <h2 data-i18n="education_title">Educación</h2>
-  <p data-i18n="edu1"></p>
-  <p data-i18n="edu2"></p>
-</section>
-
-</main>
-
-<footer>
-  <p>© 2026</p>
-</footer>
-
+  </main>
+</div>
 <script src="script.js"></script>
 </body>
 </html>

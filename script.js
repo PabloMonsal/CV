@@ -1,38 +1,45 @@
 const translations = {
   es: {
-    profile_title: "Perfil",
-    profile_text: "Ingeniero de sistemas enfocado en automatización, CI/CD y RPA.",
-    skills_title: "Stack Tecnológico",
-    experience_title: "Experiencia",
-    projects_title: "Proyectos",
-    education_title: "Educación",
+    name: "Juan Pablo Monsalve",
+    contact: "Contacto",
+    location: "Medellín, Colombia",
+    skills: "Skills",
+    languages: "Idiomas",
+    lang_es: "Español - Nativo",
+    lang_en: "Inglés - Intermedio",
 
+    profile_title: "Perfil",
+    profile_text: "Ingeniero de sistemas enfocado en automatización de pruebas, CI/CD y RPA. Experiencia en automatización web, mobile y APIs, además de integración continua en entornos empresariales.",
+
+    experience: "Experiencia",
     job1_date: "2022 - Actual",
     job1_1: "Automatización web, mobile y APIs",
-    job1_2: "Pipelines CI/CD en GitLab",
-    job1_3: "Automatización en SAP",
+    job1_2: "Implementación de pipelines en GitLab",
+    job1_3: "Estrategias de automatización en SAP",
 
     job2_date: "2021 - 2022",
     job2_1: "Automatización con Selenium",
     job2_2: "Uso de Screenplay",
-    job2_3: "Pipelines en Jenkins",
+    job2_3: "Mantenimiento de pipelines en Jenkins",
 
-    proj1: "Extracción de datos con IA (AWS + PDFs)",
-    proj2: "Automatización con UiPath",
-    proj3: "APIs para procesamiento de archivos",
-
-    edu1: "Ingeniería de Sistemas (En curso)",
-    edu2: "Tecnólogo de Sistemas"
+    education: "Educación",
+    edu1: "Ingeniería de Sistemas - ITM (En curso)",
+    edu2: "Tecnólogo de Sistemas - ITM"
   },
 
   en: {
-    profile_title: "Profile",
-    profile_text: "Systems engineer focused on automation, CI/CD and RPA.",
-    skills_title: "Tech Stack",
-    experience_title: "Experience",
-    projects_title: "Projects",
-    education_title: "Education",
+    name: "Juan Pablo Monsalve",
+    contact: "Contact",
+    location: "Medellín, Colombia",
+    skills: "Skills",
+    languages: "Languages",
+    lang_es: "Spanish - Native",
+    lang_en: "English - Intermediate",
 
+    profile_title: "Profile",
+    profile_text: "Systems engineer focused on test automation, CI/CD and RPA. Experience in web, mobile and API automation, as well as continuous integration in enterprise environments.",
+
+    experience: "Experience",
     job1_date: "2022 - Present",
     job1_1: "Web, mobile and API automation",
     job1_2: "CI/CD pipelines in GitLab",
@@ -41,14 +48,11 @@ const translations = {
     job2_date: "2021 - 2022",
     job2_1: "Automation using Selenium",
     job2_2: "Screenplay pattern",
-    job2_3: "Jenkins pipelines",
+    job2_3: "Jenkins pipeline maintenance",
 
-    proj1: "AI data extraction (AWS + PDFs)",
-    proj2: "RPA automation with UiPath",
-    proj3: "File processing APIs",
-
-    edu1: "Systems Engineering (In progress)",
-    edu2: "Systems Technologist"
+    education: "Education",
+    edu1: "Systems Engineering - ITM (In progress)",
+    edu2: "Systems Technologist - ITM"
   }
 };
 
